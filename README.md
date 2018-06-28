@@ -60,12 +60,13 @@ const unsubscribe = form.subscribe(
   formState => {
     // Update UI
   },
-  { // FormSubscription: the list of values you want to be updated about
+  {
+    // FormSubscription: the list of values you want to be updated about
     dirty: true,
     valid: true,
     values: true
   }
-})
+)
 
 // Subscribe to field state updates
 const unregisterField = form.registerField(
